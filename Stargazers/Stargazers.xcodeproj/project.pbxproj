@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D90026A9260C9B6E003FEBDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90026A8260C9B6E003FEBDF /* AppDelegate.swift */; };
+		D90026AB260C9B6E003FEBDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90026AA260C9B6E003FEBDF /* SceneDelegate.swift */; };
+		D90026AD260C9B6E003FEBDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90026AC260C9B6E003FEBDF /* ViewController.swift */; };
+		D90026B0260C9B6E003FEBDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90026AE260C9B6E003FEBDF /* Main.storyboard */; };
+		D90026B2260C9B6F003FEBDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90026B1260C9B6F003FEBDF /* Assets.xcassets */; };
+		D90026B5260C9B6F003FEBDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90026B3260C9B6F003FEBDF /* LaunchScreen.storyboard */; };
+		D90026C0260C9B6F003FEBDF /* StargazersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90026BF260C9B6F003FEBDF /* StargazersTests.swift */; };
+		D90026CB260C9B6F003FEBDF /* StargazersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90026CA260C9B6F003FEBDF /* StargazersUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D90026BC260C9B6F003FEBDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D900269D260C9B6E003FEBDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D90026A4260C9B6E003FEBDF;
+			remoteInfo = Stargazers;
+		};
+		D90026C7260C9B6F003FEBDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D900269D260C9B6E003FEBDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D90026A4260C9B6E003FEBDF;
+			remoteInfo = Stargazers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D90026A5260C9B6E003FEBDF /* Stargazers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stargazers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90026A8260C9B6E003FEBDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D90026AA260C9B6E003FEBDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D90026AC260C9B6E003FEBDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D90026AF260C9B6E003FEBDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D90026B1260C9B6F003FEBDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D90026B4260C9B6F003FEBDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D90026B6260C9B6F003FEBDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D90026BB260C9B6F003FEBDF /* StargazersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StargazersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90026BF260C9B6F003FEBDF /* StargazersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazersTests.swift; sourceTree = "<group>"; };
+		D90026C1260C9B6F003FEBDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D90026C6260C9B6F003FEBDF /* StargazersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StargazersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90026CA260C9B6F003FEBDF /* StargazersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazersUITests.swift; sourceTree = "<group>"; };
+		D90026CC260C9B6F003FEBDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9E51C5C260CD7D300033F4F /* RedHatDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		D9E51C5D260CD7E500033F4F /* RedHatDisplay-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RedHatDisplay-Bold.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D90026A2260C9B6E003FEBDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90026B8260C9B6F003FEBDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90026C3260C9B6F003FEBDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D900269C260C9B6E003FEBDF = {
+			isa = PBXGroup;
+			children = (
+				D90026A7260C9B6E003FEBDF /* Stargazers */,
+				D90026BE260C9B6F003FEBDF /* StargazersTests */,
+				D90026C9260C9B6F003FEBDF /* StargazersUITests */,
+				D90026A6260C9B6E003FEBDF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D90026A6260C9B6E003FEBDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D90026A5260C9B6E003FEBDF /* Stargazers.app */,
+				D90026BB260C9B6F003FEBDF /* StargazersTests.xctest */,
+				D90026C6260C9B6F003FEBDF /* StargazersUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D90026A7260C9B6E003FEBDF /* Stargazers */ = {
+			isa = PBXGroup;
+			children = (
+				D9E51C3E260CCEC900033F4F /* Views */,
+				D9E51C3D260CCEB900033F4F /* Controller */,
+				D90026A8260C9B6E003FEBDF /* AppDelegate.swift */,
+				D90026AA260C9B6E003FEBDF /* SceneDelegate.swift */,
+				D90026AC260C9B6E003FEBDF /* ViewController.swift */,
+				D90026AE260C9B6E003FEBDF /* Main.storyboard */,
+				D90026B1260C9B6F003FEBDF /* Assets.xcassets */,
+				D90026B3260C9B6F003FEBDF /* LaunchScreen.storyboard */,
+				D90026B6260C9B6F003FEBDF /* Info.plist */,
+				D9E51C50260CD51600033F4F /* Fonts */,
+			);
+			path = Stargazers;
+			sourceTree = "<group>";
+		};
+		D90026BE260C9B6F003FEBDF /* StargazersTests */ = {
+			isa = PBXGroup;
+			children = (
+				D90026BF260C9B6F003FEBDF /* StargazersTests.swift */,
+				D90026C1260C9B6F003FEBDF /* Info.plist */,
+			);
+			path = StargazersTests;
+			sourceTree = "<group>";
+		};
+		D90026C9260C9B6F003FEBDF /* StargazersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D90026CA260C9B6F003FEBDF /* StargazersUITests.swift */,
+				D90026CC260C9B6F003FEBDF /* Info.plist */,
+			);
+			path = StargazersUITests;
+			sourceTree = "<group>";
+		};
+		D9E51C3D260CCEB900033F4F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D9E51C3E260CCEC900033F4F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D9E51C50260CD51600033F4F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D9E51C5C260CD7D300033F4F /* RedHatDisplay-Regular.ttf */,
+				D9E51C5D260CD7E500033F4F /* RedHatDisplay-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D90026A4260C9B6E003FEBDF /* Stargazers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D90026CF260C9B6F003FEBDF /* Build configuration list for PBXNativeTarget "Stargazers" */;
+			buildPhases = (
+				D90026A1260C9B6E003FEBDF /* Sources */,
+				D90026A2260C9B6E003FEBDF /* Frameworks */,
+				D90026A3260C9B6E003FEBDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stargazers;
+			productName = Stargazers;
+			productReference = D90026A5260C9B6E003FEBDF /* Stargazers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D90026BA260C9B6F003FEBDF /* StargazersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D90026D2260C9B6F003FEBDF /* Build configuration list for PBXNativeTarget "StargazersTests" */;
+			buildPhases = (
+				D90026B7260C9B6F003FEBDF /* Sources */,
+				D90026B8260C9B6F003FEBDF /* Frameworks */,
+				D90026B9260C9B6F003FEBDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D90026BD260C9B6F003FEBDF /* PBXTargetDependency */,
+			);
+			name = StargazersTests;
+			productName = StargazersTests;
+			productReference = D90026BB260C9B6F003FEBDF /* StargazersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D90026C5260C9B6F003FEBDF /* StargazersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D90026D5260C9B6F003FEBDF /* Build configuration list for PBXNativeTarget "StargazersUITests" */;
+			buildPhases = (
+				D90026C2260C9B6F003FEBDF /* Sources */,
+				D90026C3260C9B6F003FEBDF /* Frameworks */,
+				D90026C4260C9B6F003FEBDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D90026C8260C9B6F003FEBDF /* PBXTargetDependency */,
+			);
+			name = StargazersUITests;
+			productName = StargazersUITests;
+			productReference = D90026C6260C9B6F003FEBDF /* StargazersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D900269D260C9B6E003FEBDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					D90026A4260C9B6E003FEBDF = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					D90026BA260C9B6F003FEBDF = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = D90026A4260C9B6E003FEBDF;
+					};
+					D90026C5260C9B6F003FEBDF = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = D90026A4260C9B6E003FEBDF;
+					};
+				};
+			};
+			buildConfigurationList = D90026A0260C9B6E003FEBDF /* Build configuration list for PBXProject "Stargazers" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D900269C260C9B6E003FEBDF;
+			productRefGroup = D90026A6260C9B6E003FEBDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D90026A4260C9B6E003FEBDF /* Stargazers */,
+				D90026BA260C9B6F003FEBDF /* StargazersTests */,
+				D90026C5260C9B6F003FEBDF /* StargazersUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D90026A3260C9B6E003FEBDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D90026B5260C9B6F003FEBDF /* LaunchScreen.storyboard in Resources */,
+				D90026B2260C9B6F003FEBDF /* Assets.xcassets in Resources */,
+				D90026B0260C9B6E003FEBDF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90026B9260C9B6F003FEBDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90026C4260C9B6F003FEBDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D90026A1260C9B6E003FEBDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D90026AD260C9B6E003FEBDF /* ViewController.swift in Sources */,
+				D90026A9260C9B6E003FEBDF /* AppDelegate.swift in Sources */,
+				D90026AB260C9B6E003FEBDF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90026B7260C9B6F003FEBDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D90026C0260C9B6F003FEBDF /* StargazersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D90026C2260C9B6F003FEBDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D90026CB260C9B6F003FEBDF /* StargazersUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D90026BD260C9B6F003FEBDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D90026A4260C9B6E003FEBDF /* Stargazers */;
+			targetProxy = D90026BC260C9B6F003FEBDF /* PBXContainerItemProxy */;
+		};
+		D90026C8260C9B6F003FEBDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D90026A4260C9B6E003FEBDF /* Stargazers */;
+			targetProxy = D90026C7260C9B6F003FEBDF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D90026AE260C9B6E003FEBDF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D90026AF260C9B6E003FEBDF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D90026B3260C9B6F003FEBDF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D90026B4260C9B6F003FEBDF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D90026CD260C9B6F003FEBDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D90026CE260C9B6F003FEBDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D90026D0260C9B6F003FEBDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QC58JU58Z5;
+				INFOPLIST_FILE = Stargazers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.diciodix.Stargazers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D90026D1260C9B6F003FEBDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QC58JU58Z5;
+				INFOPLIST_FILE = Stargazers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.diciodix.Stargazers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D90026D3260C9B6F003FEBDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QC58JU58Z5;
+				INFOPLIST_FILE = StargazersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.diciodix.StargazersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stargazers.app/Stargazers";
+			};
+			name = Debug;
+		};
+		D90026D4260C9B6F003FEBDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QC58JU58Z5;
+				INFOPLIST_FILE = StargazersTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.diciodix.StargazersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stargazers.app/Stargazers";
+			};
+			name = Release;
+		};
+		D90026D6260C9B6F003FEBDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QC58JU58Z5;
+				INFOPLIST_FILE = StargazersUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.diciodix.StargazersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Stargazers;
+			};
+			name = Debug;
+		};
+		D90026D7260C9B6F003FEBDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QC58JU58Z5;
+				INFOPLIST_FILE = StargazersUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = it.diciodix.StargazersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Stargazers;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D90026A0260C9B6E003FEBDF /* Build configuration list for PBXProject "Stargazers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D90026CD260C9B6F003FEBDF /* Debug */,
+				D90026CE260C9B6F003FEBDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D90026CF260C9B6F003FEBDF /* Build configuration list for PBXNativeTarget "Stargazers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D90026D0260C9B6F003FEBDF /* Debug */,
+				D90026D1260C9B6F003FEBDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D90026D2260C9B6F003FEBDF /* Build configuration list for PBXNativeTarget "StargazersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D90026D3260C9B6F003FEBDF /* Debug */,
+				D90026D4260C9B6F003FEBDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D90026D5260C9B6F003FEBDF /* Build configuration list for PBXNativeTarget "StargazersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D90026D6260C9B6F003FEBDF /* Debug */,
+				D90026D7260C9B6F003FEBDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D900269D260C9B6E003FEBDF /* Project object */;
+}
