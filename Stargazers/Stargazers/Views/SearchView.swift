@@ -15,7 +15,6 @@ class SearchView: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        
     }
     
     @IBAction func SearchRepoButtonAction(_ sender: Any) {
@@ -24,6 +23,6 @@ class SearchView: UIViewController {
             print(result)
         }
         
-        //self.performSegue(withIdentifier: "resultViweSegue", sender: self)
+        self.performSegue(withIdentifier: "resultViweSegue", sender: self)
     }
 }
