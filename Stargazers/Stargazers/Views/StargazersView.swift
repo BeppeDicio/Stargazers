@@ -10,6 +10,11 @@ import UIKit
 class StargazersView: UIViewController {
 
     @IBOutlet weak var stargazersTableView: UITableView!
+    @IBOutlet weak var ownerLabel: UILabel!
+    @IBOutlet weak var repoLabel: UILabel!
+    
+    var owner: String = ""
+    var repository: String = ""
     
     private var viewModel = StargazersViewModel()
     
@@ -17,7 +22,7 @@ class StargazersView: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        loadStargazersData()
+        updateData()
     }
     
     private func loadStargazersData(){
@@ -26,6 +31,19 @@ class StargazersView: UIViewController {
             self?.stargazersTableView.dataSource = self
             self?.stargazersTableView.reloadData()
         }
+    }
+    
+    public func setOwnerAndRepo(owner: String, repository: String){
+        self.owner = owner
+        self.repository = repository
+        
+    }
+    
+    private func updateData() {
+        
+        self.ownerLabel?.text = owner
+        self.repoLabel?.text = repository
+        loadStargazersData()
     }
 }
 

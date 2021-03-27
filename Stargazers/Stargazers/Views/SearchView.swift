@@ -10,6 +10,7 @@ import UIKit
 class SearchView: UIViewController {
 
     var apiService = ApiService()
+    
     @IBOutlet weak var searchRepoButton: UIButton!
     @IBOutlet weak var ownerTextField: UITextField!
     @IBOutlet weak var repositoryTextField: UITextField!
@@ -17,7 +18,7 @@ class SearchView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.hideKeyboardWhenTappedAround() 
        
         // searchRepoButton settings
         searchRepoButton.layer.cornerRadius = 25
@@ -29,13 +30,24 @@ class SearchView: UIViewController {
         if(ownerTextField.text == "" || repositoryTextField.text == "") {
             errorLabel.alpha = 1
             errorLabel.text = "Attention! Please check if the Owner and the Repositoy are correct!"
-            print("one of the TextFields are null")
+            //print("one of the TextFields are null")
             return
         }
-        /*apiService.getStargazersData { (result) in
-            print(result)
-        }*/
         
+        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "StargazersView") as? StargazersView
+        vc?.setOwnerAndRepo(owner: ownerTextField.text!, repository: repositoryTextField.text!)
+        self.navigationController?.pushViewController(vc!, animated: true)
         //self.performSegue(withIdentifier: "resultViweSegue", sender: self)
+    }
+}
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }

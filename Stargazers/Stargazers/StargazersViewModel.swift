@@ -14,7 +14,7 @@ class StargazersViewModel {
     
     func fetchStargatersData(completion: @escaping () -> ()) {
         
-        apiService.getStargazersData { [weak self] (result) in
+        apiService.getStargazersData() { [weak self] (result) in
             
             switch result {
             case .success(let listOf):
