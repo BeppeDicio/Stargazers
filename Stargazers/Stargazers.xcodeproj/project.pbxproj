@@ -119,16 +119,14 @@
 				D96555E5260DF22B00E8A347 /* Models */,
 				D9E51C3E260CCEC900033F4F /* Views */,
 				D9E51C3D260CCEB900033F4F /* Controllers */,
+				D97C59FF260FABDB002461C5 /* StargazersTableView */,
 				D90026A8260C9B6E003FEBDF /* AppDelegate.swift */,
 				D90026AA260C9B6E003FEBDF /* SceneDelegate.swift */,
-				D90026AC260C9B6E003FEBDF /* NavigationController.swift */,
 				D90026AE260C9B6E003FEBDF /* Main.storyboard */,
 				D90026B1260C9B6F003FEBDF /* Assets.xcassets */,
 				D90026B3260C9B6F003FEBDF /* LaunchScreen.storyboard */,
 				D90026B6260C9B6F003FEBDF /* Info.plist */,
 				D9E51C50260CD51600033F4F /* Fonts */,
-				D96555FA260E406100E8A347 /* StargazersViewModel.swift */,
-				D96555FF260E461C00E8A347 /* StargazersTableViewCell.swift */,
 			);
 			path = Stargazers;
 			sourceTree = "<group>";
@@ -167,9 +165,19 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		D97C59FF260FABDB002461C5 /* StargazersTableView */ = {
+			isa = PBXGroup;
+			children = (
+				D96555FA260E406100E8A347 /* StargazersViewModel.swift */,
+				D96555FF260E461C00E8A347 /* StargazersTableViewCell.swift */,
+			);
+			path = StargazersTableView;
+			sourceTree = "<group>";
+		};
 		D9E51C3D260CCEB900033F4F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D90026AC260C9B6E003FEBDF /* NavigationController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
