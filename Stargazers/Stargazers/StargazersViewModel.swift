@@ -12,9 +12,9 @@ class StargazersViewModel {
     private var apiService = ApiService()
     private var stargazers = Array<Stargazer>()
     
-    func fetchStargatersData(completion: @escaping () -> ()) {
+    func fetchStargatersData(owner: String, repository: String, completion: @escaping () -> ()) {
         
-        apiService.getStargazersData() { [weak self] (result) in
+        apiService.getStargazersData(owner: owner, repository: repository) { [weak self] (result) in
             
             switch result {
             case .success(let listOf):

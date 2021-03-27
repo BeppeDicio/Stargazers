@@ -23,6 +23,9 @@ class SearchView: UIViewController {
         // searchRepoButton settings
         searchRepoButton.layer.cornerRadius = 25
         
+        ownerTextField.text = "juicycleff"
+        repositoryTextField.text = "ultimate-backend"
+        
     }
     
     @IBAction func SearchRepoButtonAction(_ sender: Any) {
@@ -38,6 +41,9 @@ class SearchView: UIViewController {
         vc?.setOwnerAndRepo(owner: ownerTextField.text!, repository: repositoryTextField.text!)
         self.navigationController?.pushViewController(vc!, animated: true)
         //self.performSegue(withIdentifier: "resultViweSegue", sender: self)
+        
+        ownerTextField.text = ""
+        repositoryTextField.text = ""
     }
 }
 extension UIViewController {

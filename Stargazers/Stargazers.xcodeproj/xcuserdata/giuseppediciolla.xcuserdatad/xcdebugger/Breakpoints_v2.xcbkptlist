@@ -14,9 +14,9 @@
             filePath = "Stargazers/Services/ApiService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "getStargazersData(completion:)"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "getStargazersData(owner:repository:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

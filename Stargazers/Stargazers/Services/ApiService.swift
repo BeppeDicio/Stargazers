@@ -11,12 +11,9 @@ class ApiService {
     
     private var dataTask: URLSessionDataTask?
     
-    let ownerName = ""
-    let repoName = ""
-    
-    func getStargazersData(completion: @escaping (Result<[Stargazer], Error>) -> Void) {
+    func getStargazersData(owner: String, repository: String, completion: @escaping (Result<[Stargazer], Error>) -> Void) {
         
-        let stargazersURL = "https://api.github.com/repos/\(ownerName)/\(repoName)/stargazers"
+        let stargazersURL = "https://api.github.com/repos/\(owner)/\(repository)/stargazers"
         
         guard let url = URL(string: stargazersURL) else {return}
         
