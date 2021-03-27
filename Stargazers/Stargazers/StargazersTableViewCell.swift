@@ -23,6 +23,10 @@ class StargazersTableViewCell: UITableViewCell {
     private func updateUI(username: String?, avatarImage: String?){
         self.usernameLabel.text = username
         
+        avatarImageView.layer.cornerRadius = avatarImageView.frame.height/2
+        avatarImageView.layer.masksToBounds = false
+        avatarImageView.clipsToBounds = true
+        
         guard let avatarString = avatarImage else {return}
         urlString = avatarString
         

@@ -21,7 +21,6 @@ class StargazersView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        // TODO: Infinity scroll to get more than 100 Stargazers
         
         stargazersTableView.delegate = self
         
