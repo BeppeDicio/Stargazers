@@ -179,12 +179,19 @@
                             </label>
                             <view contentMode="scaleToFill" id="w3o-Tg-kkP">
                                 <rect key="frame" x="0.0" y="284" width="414" height="612"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="hJD-tA-fwc">
-                                        <rect key="frame" x="197" y="295" width="30" height="32"/>
+                                        <rect key="frame" x="191" y="291" width="30" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                     </activityIndicatorView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Error by serching Stargazers" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGf-J4-PL9">
+                                        <rect key="frame" x="49" y="26" width="315" height="141"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="RedHatDisplay-Regular" family="Red Hat Display" pointSize="18"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -214,6 +221,7 @@
                     <navigationItem key="navigationItem" id="KdO-L0-BJj"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="errorLabel" destination="zGf-J4-PL9" id="NUt-fL-45x"/>
                         <outlet property="loaderView" destination="w3o-Tg-kkP" id="ihA-QS-x7l"/>
                         <outlet property="ownerLabel" destination="bwJ-8O-iQk" id="4Iq-wl-p8c"/>
                         <outlet property="repoLabel" destination="GFE-gG-6Wr" id="Me2-ku-p4G"/>

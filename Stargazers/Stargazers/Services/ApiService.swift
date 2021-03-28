@@ -28,14 +28,15 @@ class ApiService {
             }
             
             guard let response = response as? HTTPURLResponse else {
-                // Handle Empty Response
+        
+                // TODO: Handle Empty Response
                 print("Empty Response")
                 return
             }
             print("Response status code: \(response.statusCode)")
             
             guard let data = data else {
-                // Handle Empty Data
+                // TODO: Handle Empty Data
                 print("Empty Data")
                 return
             }

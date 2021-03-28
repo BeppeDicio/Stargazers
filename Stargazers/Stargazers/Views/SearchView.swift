@@ -23,9 +23,6 @@ class SearchView: UIViewController {
         // searchRepoButton settings
         searchRepoButton.layer.cornerRadius = 25
         
-        ownerTextField.text = "juicycleff"
-        repositoryTextField.text = "ultimate-backend"
-        
     }
     
     @IBAction func SearchRepoButtonAction(_ sender: Any) {

@@ -13,6 +13,7 @@ class StargazersView: UIViewController {
     @IBOutlet weak var ownerLabel: UILabel!
     @IBOutlet weak var repoLabel: UILabel!
     @IBOutlet weak var loaderView: UIView!
+    @IBOutlet weak var errorLabel: UILabel!
     
     var owner: String = ""
     var repository: String = ""
@@ -22,8 +23,8 @@ class StargazersView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
         stargazersTableView.delegate = self
+        self.errorLabel.alpha = 0;
         self.loaderView.alpha = 1;
         updateData()
     }
@@ -51,10 +52,22 @@ class StargazersView: UIViewController {
         self.repoLabel?.text = repository
         loadStargazersData()
     }
+    
+    private func updateErrorLabel(bool: Bool) {
+        if bool {
+            errorLabel.text = "We are sorry! No Stargazers found for the asked repository. Check if the name of the Owner or the Repository are correct!"
+            errorLabel.alpha = 1;
+        } else {
+            self.loaderView.alpha = 0
+        }
+    }
 }
 
 // Table view
+// TODO: Manage empty results
+// TODO: Manage api errors from name errors on the Owner and Repo String
 extension StargazersView: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.numberOfRowsInSection(section: section)
     }
@@ -70,7 +83,8 @@ extension StargazersView: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        self.loaderView.alpha = 0
+        
+        self.updateErrorLabel(bool: false)
     }
 }
 
