@@ -12,6 +12,7 @@ class StargazersView: UIViewController {
     @IBOutlet weak var stargazersTableView: UITableView!
     @IBOutlet weak var ownerLabel: UILabel!
     @IBOutlet weak var repoLabel: UILabel!
+    @IBOutlet weak var loaderView: UIView!
     
     var owner: String = ""
     var repository: String = ""
@@ -23,7 +24,7 @@ class StargazersView: UIViewController {
         // Do any additional setup after loading the view.
         
         stargazersTableView.delegate = self
-        
+        self.loaderView.alpha = 1;
         updateData()
     }
     
@@ -66,6 +67,10 @@ extension StargazersView: UITableViewDataSource {
         cell.selectionStyle = .none
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        self.loaderView.alpha = 0
     }
 }
 
